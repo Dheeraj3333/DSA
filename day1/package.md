@@ -42,7 +42,7 @@ A **package** in Java is like a **folder** or **namespace** that organizes your 
 ```java
 package day1;
 
-public class Main {
+public class Datatypes {
     public static void main(String[] args) {
         System.out.println("Hello from package!");
     }
@@ -51,20 +51,20 @@ public class Main {
 
 ### Save File As:
 ```
-d:\DSA\day1\Main.java
+d:\DSA\day1\Datatypes.java
 ```
 
 ### Compile From Root (`DSA`):
 ```bash
-javac day1/Main.java
+javac day1/Datatypes.java
 ```
 
 ### Run:
 ```bash
-java day1.Main
+java day1.Datatypes
 ```
 
-> ⚠️ You must **run from outside** the `day1` folder, because `Main` is in the `day1` package.
+> ⚠️ You must **run from outside** the `day1` folder, because `Datatypes` is in the `day1` package.
 
 ---
 
@@ -79,13 +79,13 @@ package day1;
 But run like this:
 ```bash
 cd day1
-java Main
+java Datatypes
 ```
 
 ### Error Message:
 ```
-Error: Could not find or load main class Main
-Caused by: java.lang.NoClassDefFoundError: day1/Main (wrong name)
+Error: Could not find or load main class Datatypes
+Caused by: java.lang.NoClassDefFoundError: day1/Datatypes (wrong name)
 ```
 
 ### Solution:
@@ -98,7 +98,7 @@ Caused by: java.lang.NoClassDefFoundError: day1/Main (wrong name)
 
 ### Code without `package`:
 ```java
-public class Main {
+public class Datatypes {
     public static void main(String[] args) {
         System.out.println("No package used.");
     }
@@ -108,8 +108,8 @@ public class Main {
 Then you can compile and run directly:
 ```bash
 cd d:\DSA\day1
-javac Main.java
-java Main
+javac Datatypes.java
+java Datatypes
 ```
 
 ---
@@ -118,6 +118,6 @@ java Main
 
 | Scenario                            | What to Do                                 |
 |-------------------------------------|---------------------------------------------|
-| Using `package day1;`               | Compile from root (`javac day1/Main.java`) <br> Run with `java day1.Main` |
+| Using `package day1;`               | Compile from root (`javac day1/Datatypes.java`) <br> Run with `java day1.Datatypes` |
 | Not using any package               | Compile and run in the same directory       |
 | Getting `NoClassDefFoundError`      | Check if you are in the wrong folder or missing the package prefix |
