@@ -45,7 +45,7 @@ To find the magnitude of a negative number:
 ---
 
 
-## **3. Examples**
+## **4. Examples**
 
 ### **Example 1: `11010` (5-bit 2's complement)**
 | Step | Action | Binary Value | Explanation |
@@ -81,7 +81,7 @@ To find the magnitude of a negative number:
 
 ---
 
-## **4. Important Notes**
+## **5. Important Notes**
 1. **Bit Length Matters**:  
    - `11010` in **5-bit** = `-6` (MSB = `1`).  
    - `11010` in **8-bit** = `00011010` = `+26` (MSB = `0`).  
@@ -91,7 +91,7 @@ To find the magnitude of a negative number:
 
 ---
 
-## **5. Summary Table**
+## **6. Summary Table**
 | Binary (5-bit) | MSB | Sign | 2's Complement Magnitude | Final Value |
 |----------------|-----|------|--------------------------|-------------|
 | `01010` | `0` | + | `1010` (direct) | `+10` |
@@ -100,7 +100,7 @@ To find the magnitude of a negative number:
 
 ---
 
-## **6. References**
+## **7. References**
 - [Two's Complement (Wikipedia)](https://en.wikipedia.org/wiki/Two%27s_complement)
 - [Signed Number Representations (GeeksforGeeks)](https://www.geeksforgeeks.org/signed-representation-of-binary-numbers/)
 
