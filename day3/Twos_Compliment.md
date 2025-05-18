@@ -11,11 +11,11 @@ This guide explains how to determine the **sign** of a binary number represented
 
 ### **Key Rules**
 1. **Positive Numbers**: Directly convert binary to decimal.
-2. **Negative Numbers**: Take the 2's complement again to find the magnitude.
+2. **Negative Numbers**: To find the magnitude of a negative number, take its 2's complement.
 
 ---
 
-## **2. Step-by-Step Sign Detection**
+## **2. Step-by-Step Sign Detection** (binary to decimal)
 
 ### **Step 1: Check the MSB (Most Significant Bit)**
 - **If `MSB = 0`** → Number is **positive** (convert normally).
@@ -28,6 +28,22 @@ To find the magnitude of a negative number:
 3. The final value is the **positive equivalent** of the original negative number.
 
 ---
+
+## **3. Step-by-Step Sign Detection** (decimal to binary)
+
+### **Step 1: find magnitude of decimal number**
+- **If decimal is -8 find magnitude of `8`** and add `0` at MSB.
+- **example :  `8` --> `1000` --> `01000`**
+
+### **Step 2: Compute the 2's Complement**
+To find the magnitude of a negative number:
+1. **Invert all bits** (change `1`→`0` and `0`→`1`).
+2. **Add `1`** to the inverted result.
+3. The final value is the **binary form** of the original number.
+
+#### **Note** : Above steps are for -ve numbers especially for positive number directly find out magnitude and add a MSB of 0 to it.
+---
+
 
 ## **3. Examples**
 
