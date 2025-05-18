@@ -1,6 +1,10 @@
 package day2;
 
+import day3.*;
+
 public class Casting {
+
+
 
     public static void main(String[] args) {
         /**
@@ -52,7 +56,13 @@ public class Casting {
             System.out.println("a1 which was instance of Animal initially is being type casted to Dog by downcasting");
         }
 
-        // System.out.println(d2);
+        // *******************************************************************************************************************
+
+        /**
+         * can be understand after completing the day3 package/folder
+         * take a look at Methods_Java_Guide.md file in day3 package
+         */
+        System.out.println(day3.BinaryNumber.toBinary(50));;
 
     }
 }
